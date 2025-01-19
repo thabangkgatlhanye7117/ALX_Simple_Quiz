@@ -1,28 +1,30 @@
 // CHECK ANSWER FUNCTION
 
 function checkAnswer(){
-  const correctAnswer = "4";
+      const correctAnswer = "4";
 
- const userAnswer = document.querySelector("input[name='quiz']:checked").value;
- const feedBackContent = document.querySelector("#feedback");
+//Retriever and feedback variable
+      let userAnswer = document.querySelector("input[name='quiz']:checked").value;
+
+      let feedBackContent = document.getElementById("feedback");
+
+
  //Comparison between userAnswer and correctAnswer
- if(userAnswer === correctAnswer){
-
-  const feedBackContent = document.querySelector("#feedback");
+    if (userAnswer === correctAnswer){
 
       feedBackContent.textContent = "Correct! Welldone.";
 
- } else {
+     } else {
 
-      feedBackContent.textContent = "That's incorrect. Try again "
- }
+      feedBackContent.textContent = "That's incorrect. Try again! "
+      }
  
 }
 
 
-// call the button element by Id and add event listener to it
+// call the button element by Id and add event listener to it.
 
-const button = document.getElementById("submit-answer");
+let button = document.getElementById("submit-answer");
 
 button.addEventListener("click", checkAnswer);
 
