@@ -1,1 +1,1 @@
-# ALX_Simple_Quiz
+# ALX_Simple_Quiz using HTML, CSS and Javascript
